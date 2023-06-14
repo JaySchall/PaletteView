@@ -11,6 +11,13 @@ colorhunt.onclick = function()
     root.style.setProperty('--main-color', "#"+hex_list.substring(6, 12));
     root.style.setProperty('--second-color', "#"+hex_list.substring(12, 18));
     root.style.setProperty('--acc-color', "#"+hex_list.substring(18, 24));
+    if(hex_list[0] >= "7")
+    {
+        root.style.setProperty('--bg-color', "#"+"000000");
+    }
+    else{
+        root.style.setProperty('--bg-color', "#"+"ffffff");
+    }
 }
 realtimecolors.onclick = function()
 {

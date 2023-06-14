@@ -116,6 +116,7 @@ button {
     background: none;
     padding: 20px;
     margin: 20px;
+    z-index: 1;
 }
 .option-bg{
     opacity: 30%;
@@ -125,13 +126,14 @@ button {
     height: 100%;
     top: 0px;
     left: 0px;
-    z-index: -9;
 }
 input {
+    position: relative;
     border-radius: 6px;
     border-style: solid;
     border-color: var(--acc-color);
     font-size: 20px;
+    z-index: 1;
 }
 .hex{
     text-align: center;
