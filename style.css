@@ -1,0 +1,100 @@
+:root {
+    --bg-color: #fff;
+    --main-color: #8696FE;
+    --txt-color: #11009E;
+    --acc-color: #C4B0FF;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Inter', sans-serif;
+    color: var(--txt-color);
+}
+header{
+    width: 100%;
+    background-color: var(--bg-color);
+}
+nav{
+    display: flex;
+    margin: auto;
+    width: 40%;
+}
+.logo{
+    margin-top: auto;
+    margin-bottom: auto;
+    
+}
+ul{
+    display: flex;
+    margin: auto;
+    list-style-type: none;
+}
+li{
+    margin: 20px;
+}
+a {
+    text-decoration: none;
+    font-size: 30px;
+    color: var(--txt-color);
+}
+h4 {
+    font-size: 30px;
+    background-image: linear-gradient(120deg, var(--main-color), var(--txt-color));
+    background-clip: text;
+    color: transparent;
+}
+h1 {
+    font-size: 60px;
+}
+h3 {
+    font-size: 40px;
+    color: var(--txt-color);
+}
+section {
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+}
+.about div{
+    margin: auto;
+}
+.title{
+    display: flex;
+    margin: auto;
+    width: fit-content;
+}
+.title .palette{
+    background-image: linear-gradient(120deg, var(--main-color), var(--txt-color));
+    background-clip: text;
+    color: transparent;
+}
+.title .view{
+    background-image: linear-gradient(120deg, var(--txt-color), var(--main-color));
+    background-clip: text;
+    color: transparent;
+}
+p {
+    font-size: 20px;
+}
+p a{
+    font-size: 20px;
+    color: var(--main-color);
+}
+
+.all-buttons{
+    display: flex;
+    flex-direction: row;
+}
+.option-bg{
+    opacity: 10%;
+    background-color: var(--acc-color);
+    position: absolute;
+}
+::selection {
+    background-color: var(--acc-color);
+    
+}
+::-moz-selection {
+    background-color: var(--acc-color);
+
+}
