@@ -1,6 +1,20 @@
 const root = document.documentElement
 var colorhunt = document.getElementById("colorhunt");
 var realtimecolors = document.getElementById("realtimecolors");
+var textInput = document.getElementById("text");
+var backgroundInput = document.getElementById("background");
+var mainInput = document.getElementById("main");
+var secondaryInput = document.getElementById("secondary");
+var accentInput = document.getElementById("accent");
+function setInputs()
+{
+    textInput.value = getComputedStyle(root).getPropertyValue('--txt-color');
+    backgroundInput.value = getComputedStyle(root).getPropertyValue('--bg-color');
+    mainInput.value = getComputedStyle(root).getPropertyValue('--main-color');
+    secondaryInput.value = getComputedStyle(root).getPropertyValue('--second-color');
+    accentInput.value = getComputedStyle(root).getPropertyValue('--acc-color');
+}
+
 colorhunt.onclick = function()
 {
     input = colorhunt.parentNode.getElementsByTagName('input')[0];
@@ -18,6 +32,7 @@ colorhunt.onclick = function()
     else{
         root.style.setProperty('--bg-color', "#"+"ffffff");
     }
+    setInputs();
 }
 realtimecolors.onclick = function()
 {
@@ -31,4 +46,5 @@ realtimecolors.onclick = function()
     root.style.setProperty('--main-color', "#"+hex_array[2]);
     root.style.setProperty('--second-color', "#"+hex_array[3]);
     root.style.setProperty('--acc-color', "#"+hex_array[4]);
+    setInputs();
 }
